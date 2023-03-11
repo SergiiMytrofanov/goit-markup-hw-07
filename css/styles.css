@@ -63,6 +63,63 @@ p {
 
 /* header */
 
+@media (max-width: 480px) {
+
+ .mobile-nav,.mobile-adress {
+        display: none;}
+
+        .header-mobile-container{
+            display: flex;
+            
+            justify-content: space-between;
+            
+        }
+        
+        }
+       
+
+
+    @media (min-width: 481px)  {
+        .mobile-header-button {
+          display: none;
+          
+        }
+        
+      }
+
+
+    @media (max-width: 768px) {
+      
+       } 
+    
+
+    @media (min-width: 1200px) {
+       
+    }
+
+   
+
+    .mobile-header-button {
+        padding: 0;
+       
+        background-color: transparent;
+        border: none;
+        width: 32px;
+        height: 22px;
+        fill: var(--primary-text-color);
+
+            }
+    .mobile-header-svg {
+         display:block;
+         stroke: var(--primary-text-color);
+    }
+    .mobile-header-icon {
+        display:block;
+
+       
+    }
+  
+    
 .header {
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -76,6 +133,7 @@ p {
 .nav {
     display: flex;
     align-items: center;
+    
 }
 
 /* logo WebStudio - in all html files */
