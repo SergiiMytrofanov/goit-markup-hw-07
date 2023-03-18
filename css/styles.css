@@ -94,7 +94,7 @@ p {
     transform: translateX(100%);
 
     width: 100%;
-    max-width: 428px;
+    /* max-width: 428px; */
     height: 100%;
 
 
@@ -1363,12 +1363,21 @@ p {
 .filter {
     margin-bottom: 72px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 16px;
+    column-gap: 24px;
 }
 
-.filter .item+.item {
-    margin-left: 24px;
+@media screen and (min-width: 768px) {
+    .filter {
+        margin-bottom: 72px;
+        display: flex;
+        justify-content: center;
+        
+    }
 }
+
 
 .filter-btn {
     text-align: center;
@@ -1399,22 +1408,31 @@ p {
 
 /* products examples */
 
-.filter {
-    margin-bottom: 72px;
-}
+
 
 .filter-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 48px 24px;
 
 
 }
 
-.filter-list-item {
-    flex-basis: calc((100% - 48px)/3);
-
+@media screen and (min-width: 768px) {
+    .filter-list-item {
+        flex-basis: calc((100% - 24px)/2);
+    
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    .filter-list-item {
+        flex-basis: calc((100% - 48px)/3);
+    
+    }
+}
+
 
 .filter-list-link {
     text-decoration: none;
@@ -1435,7 +1453,27 @@ p {
 
 .filter-list-image {
     display: block;
+    width: 396px;
+    height: 280px;
+    background-size: contain;
 }
+
+@media screen and (min-width: 768px) {
+    .filter-list-image {
+       width: 356px;
+        height: 300x;
+       
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter-list-image {
+        width: 360px;
+        height: 300px;
+       
+    }
+}
+
 
 .filter-list-box {
     position: relative;
@@ -1490,4 +1528,4 @@ p {
     padding: 32px 0 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
-}
+}  
